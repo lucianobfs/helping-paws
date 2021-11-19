@@ -29,7 +29,7 @@ function AllPets() {
 
 
     return (
-        <div className="row row-cols-1 row-cols-md-3 g-4 mw-100">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
             {pet.map((item) => {
                 return (
                     <div className="col">   
