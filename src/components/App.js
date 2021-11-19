@@ -16,12 +16,14 @@ function App() {
     <div >
 
       <NavBar />
+      <p>
 
+      </p>
       <Routes>
 
         <Route path="/" element={<Home />} />
 
-        <Route path="allbeers" element={<AllPets />}/>
+        <Route path="allbeers" element={<AllPets />} />
 
       </Routes>
 
