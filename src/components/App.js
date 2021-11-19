@@ -11,6 +11,7 @@ import EditPet from './EditPet';
 
 
 
+
 function App() {
   return (
     <div >
@@ -26,6 +27,7 @@ function App() {
         <Route path="allbeers" element={<AllPets />} />
 
       </Routes>
+
 
     </div>
   );
