@@ -1,32 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, Routes, Route, Navigate } from "react-router-dom";
-import axios from "axios";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 import Home from './Home';
-import NavBar from './NavBar';
 import AllPets from './AllPets';
 import AddPet from './AddPet';
 import EditPet from './EditPet';
 
+function NavBar() {
+    return (
+        <nav>
 
+            <Link to="/">
 
-function App() {
-  return (
-    <div >
+                <p>ESSA É A NAV BAR</p> 
 
-      <NavBar />
+            </Link>
 
-      <Routes>
-
-        <Route path="/" element={<Home />} />
-
-        <Route path="allbeers" element={<AllPets />}/>
-
-      </Routes>
-
-    </div>
-  );
+        </nav>
+    )
 }
 
-export default App;
+
+
+export default NavBar
