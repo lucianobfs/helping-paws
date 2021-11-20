@@ -50,7 +50,7 @@ function AddPet() {
   }
 
   return (
-    <div>
+    <div className="container mt-5">
       <form onSubmit={handleSubmit}>
         <FormField
           label="URL"
@@ -92,20 +92,21 @@ function AddPet() {
           required
         />
 
-        <FormField
-          label="Sex"
-          id="SexInput"
-          type="text"
-          name="sex"
-          onChange={handleChange}
-          value={formData.sex}
-          required
-        />
+        <SelectInput
+            label="Sex"
+            id="SexInput"
+            name="sex"
+            onChange={handleChange}
+            value={formData.sex}
+        >
+            <option value="male">Macho</option>
+            <option value="female">Fêmea</option>
+        </SelectInput>
 
         <FormField
           label="Age"
           id="AgeInput"
-          type="text"
+          type="number"
           name="age"
           onChange={handleChange}
           value={formData.age}

@@ -20,7 +20,7 @@ function NavBar() {
 
         <Navbar bg="info" expand={false}>
             <Container fluid>
-                <Navbar.Brand href="#"><img src={img} alt="logo" style={{width:'100px'}}/></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={img} alt="logo" style={{width:'100px'}}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
@@ -32,9 +32,9 @@ function NavBar() {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Nav.Link to="/Home">Home</Nav.Link>
-                            <Nav.Link to="/AllPets">All Pets</Nav.Link>
-                            <Nav.Link to="/EditPet">Register Pet</Nav.Link>
+                            <Link to="/" className="text-decoration-none text-dark">Home</Link>
+                            <Link to="/AllPets" className="text-decoration-none text-dark">All Pets</Link>
+                            <Link to="/AddPet" className="text-decoration-none text-dark">Register Pet</Link>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>

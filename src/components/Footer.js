@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom"
 
 function Footer() {
     return (
@@ -12,16 +13,14 @@ function Footer() {
                         href="#!"
                         role="button"
                         data-mdb-ripple-color="dark"
-                    ><i className="fab fa-github"></i
-                    ></a>
+                    ><i className="fab fa-github"></i></a>
                     
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
                         href="#!"
                         role="button"
                         data-mdb-ripple-color="dark"
-                    ><i className="fab fa-github"></i
-                    ></a>
+                    ><i className="fab fa-github"></i></a>
                 </section>
             </div>
 
