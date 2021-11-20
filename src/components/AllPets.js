@@ -1,60 +1,106 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { FaTrashAlt } from "react-icons/fa";
+import { useParams, useNavigate } from "react-router-dom";
 
-import Home from './Home';
-import NavBar from './NavBar';
-import AddPet from './AddPet';
-import EditPet from './EditPet';
+import Home from "./Home";
+import NavBar from "./NavBar";
+import AddPet from "./AddPet";
+import EditPet from "./EditPet";
 
-
+import hero from "../assets/images/hero-all-pets.jpg"
 
 function AllPets() {
+  const [pet, setPet] = useState([]);
 
-    const [pet, setPet] = useState([])
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    axios
+      .get("https://ironrest.herokuapp.com/matheus-luciano")
+      .then((response) => {
+        setPet([...response.data]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-    useEffect(() => {
-        axios.get('https://ironrest.herokuapp.com/matheus-luciano').then((response) => {
+  console.log(pet);
 
-            setPet([...response.data])
+  async function handleDelete(id) {
+    try {
+      await axios.delete(
+        `https://ironrest.herokuapp.com/matheus-luciano/${id}`
+      );
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
-        }).catch((err) => {
-            console.log(err)
-        })
-    }, [])
+  return (
+    <>
 
-    console.log(pet)
-
-
-    return (
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-            {pet.map((item) => {
-                return (
-                    <div className="col">   
-                        <div key={item.name} className="card h-100">
-                            <Link to={`/${item.name}`} className="text-decoration-none text-dark">
-                                <img src={item.url} alt={item.name} className="card-img-top"/>
-
-                                <div className="card-body d-flex flex-column justify-content-center align-items-center mt-5">
-
-                                    <h2 className="card-title">{item.name}</h2>
-
-                                    <p className="card-text">{`${item.specie}, ${item.age}`}</p>
-
-                                </div>
-
-                            </Link>
-                        </div>
-                    </div>
-                )
-            })}
+      <div className="hero-image d-flex align-items-center justify-content-center" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero})`,backgroundRepeat: "no-repeat", backgroundSize: "cover", position: "relative" , height: "70vh"}}>
+        <div className="hero-text text-white text-center">
+          <h2  style={{fontSize: "4rem", marginBottom: "75px"}}>All the Pets</h2>
+          <p style={{fontSize: "1.8rem"}}>We have a lot of cute pets waiting to give and receive love</p>
         </div>
-    )
+      </div>
 
+      <div className="container mt-5">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          {pet.map((item) => {
+            return (
+              <div className="col">
+                <div key={item._id} className="card h-100 m-2">
+                  <Link
+                    to={`/${item._id}`}
+                    className="text-decoration-none text-dark"
+                  >
+                    <img
+                      src={item.url}
+                      alt={item.name}
+                      className="card-img-top"
+                    />
+
+                    <div className="card-body d-flex flex-column justify-content-center align-items-center mt-5">
+                      <h2 className="card-title">{item.name}</h2>
+
+                      <p className="card-text">{`${item.specie}, ${item.age} ${
+                        item.age === "1" ? "year" : "years"
+                      }`}</p>
+                    </div>
+                  </Link>
+
+                  <div className="d-flex justify-content-around pt-5 mb-0">
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      onClick={() => {
+                        handleDelete(item._id);
+                        navigate("/AllPets");
+                      }}
+                    >
+                      <FaTrashAlt />
+                    </button>
+
+                    <Link to={`/EditPet/${item._id}`}>
+                      <button type="button" className="btn btn-primary">
+                        Edit this Pet !
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
 }
 
-
-
-export default AllPets
+export default AllPets;
