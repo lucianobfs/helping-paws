@@ -3,7 +3,8 @@ import { Link, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import img from '../assets/images/hero_home.jpg';
+import img from '../assets/images/home.jpg';
+import img2 from "../assets/images/home2.jpg"
 
 import NavBar from './NavBar';
 import AllPets from './AllPets';
@@ -12,19 +13,33 @@ import EditPet from './EditPet';
 
 function Home() {
     return (
-        <div>
-            <div class="container col-xxl-8 px-4 py-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
-                        <img src={img} class="d-block mx-lg-auto img-fluid" alt="Banner  image" loading="lazy" width="700" height="500"/>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold lh-1 mb-3">Já pensou em adoção?</h1>
-                        <p class="lead">A adoção de pets ajuda a diminuir o número de animaizinhos que estão esperando por um lar. Os dados sobre o abandono de pets no Brasil são comoventes. De acordo com uma pesquisa realizada pela Organização Mundial da Saúde (OMS), somente aqui no país existem mais de 30 milhões de cães abandonados em abrigos e nas ruas, esperando somente por um lar. Por outro lado, 44,13% dos lares brasileiros possui ao menos um cão, segundo o Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
+        <>
+            <div style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "900px" }}>
+                <div className="col-xxl-8 px-4 py-5">
+                    <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div className="col-10 col-sm-8 col-lg-6">
+                        </div>
+                        <div className="col-lg-6 pt-5 pl-5">
+                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "5em", color: "lightGray" }}>Já pensou em adoção?</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="">
+                <section>
+                    <div className="row">
+                        <div>
+                            <img src={img2} style={{ width: 'auto' }} />
+                        </div>
+                        <div>
+                            <h2>Fazemos o impossível ser realidade.</h2>
+                            <p>Lutamos contra o abandono de animais domésticos e a negligência com os animais silvestres da nossa fauna. Não medimos esforços para amparar e dar suporte onde for necessário. Seja com suprimentos, tratamentos, campanhas de conscientização, ou até ir mata adentro para salvar vidas.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </>
     );
 }
 
