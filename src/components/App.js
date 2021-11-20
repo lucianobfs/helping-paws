@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 import Home from './Home';
 import NavBar from './NavBar';
+import Footer from './Footer';
 import AllPets from './AllPets';
 import AddPet from './AddPet';
 import EditPet from './EditPet';
@@ -28,6 +29,8 @@ function App() {
 
       </Routes>
 
+      <Footer />
+      
     </div>
   );
 }
