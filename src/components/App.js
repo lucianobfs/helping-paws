@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 import Home from './Home';
 import NavBar from './NavBar';
+import Footer from './Footer';
 import AllPets from './AllPets';
 import AddPet from './AddPet';
 import EditPet from './EditPet';
@@ -17,19 +18,22 @@ function App() {
     <div >
 
       <NavBar />
-      <p>
-
-      </p>
+  
       <Routes>
 
         <Route path="/" element={<Home />} />
 
-        <Route path="allbeers" element={<AllPets />} />
+        <Route path="/AllPets" element={<AllPets />} />
+
+        <Route path="/AddPet" element={<AddPet />} />
+
 
       </Routes>
 
     
 
+      <Footer />
+      
     </div>
   );
 }

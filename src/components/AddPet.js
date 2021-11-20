@@ -50,7 +50,7 @@ function AddPet() {
   }
 
   return (
-    <div>
+    <div className="container mt-5">
       <form onSubmit={handleSubmit}>
         <FormField
           label="URL"
