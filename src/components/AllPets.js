@@ -81,7 +81,8 @@ function AllPets() {
                       className="btn btn-primary"
                       onClick={() => {
                         handleDelete(item._id);
-                        navigate("/AllPets");
+                        // navigate("/AllPets");
+                        window.location.reload(false);
                       }}
                     >
                       <FaTrashAlt />

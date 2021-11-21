@@ -14,7 +14,7 @@ import EditPet from './EditPet';
 function Home() {
     return (
         <>
-            <div style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "900px" }}>
+            <div style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "900px"}}>
                 <div className="col-xxl-8 px-4 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="col-10 col-sm-8 col-lg-6">
@@ -28,7 +28,7 @@ function Home() {
             <div className="">
                 <section>
                     <div className="row">
-                        <div>
+                        <div className="mw-100 p-0">
                             <img src={img2} style={{ width: 'auto' }} />
                         </div>
                         <div>
