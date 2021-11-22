@@ -18,7 +18,7 @@ import EditPet from './EditPet';
 function NavBar() {
     return (
 
-        <Navbar bg="info" expand={false} collapseOnSelect={true}>
+        <Navbar bg="warning" expand={false} collapseOnSelect={true}>
             <Container fluid>
                 <Navbar.Brand href="/"><img src={img} alt="logo" style={{width:'100px'}}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
