@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom"
 
 function Footer() {
     return (
@@ -11,21 +10,21 @@ function Footer() {
 
                 <div className="d-flex flex-row justify-content-around">
                     <div className="m-1">
-                        <h5>Luciano</h5>
+                        <h5 className="fw-bold">Luciano</h5>
                         <a href="https://github.com/lucianobfs" target="_blank" className="text-decoration-none text-dark mr-4">
                             <FaGithub size="25px"/>
                         </a>
                         <a href="https://www.linkedin.com/in/luciano-santana-65937a221/" target="_blank" className="text-decoration-none text-dark">
-                            <FaLinkedin size="25px"/>
+                            <FaLinkedin color="#0A66C2" size="25px"/>
                         </a>
                     </div>
                     <div className="m-1">
-                        <h5>Matheus</h5>
+                        <h5 className="fw-bold">Matheus</h5>
                         <a href="https://github.com/matheusanjo" target="_blank" className="text-decoration-none text-dark mr-4">
                             <FaGithub size="25px"/>
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank" className="text-decoration-none text-dark">
-                            <FaLinkedin size="25px"/>
+                        <a href="https://www.linkedin.com/" target="_blank" className="text-decoration-none text-dark ">
+                            <FaLinkedin color="#0A66C2" size="25px"/>
                         </a>
                     </div>
                 </div>
