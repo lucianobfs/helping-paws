@@ -50,11 +50,15 @@ function AllPets() {
         </div>
       </div>
 
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
+          <div>
+            <Link to="/AddPet"><button className="btn btn-primary ms-2 mb-4">Add a Pet!</button></Link>
+          </div>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {pet.map((item) => {
             return (
               <div className="col">
+
                 <div key={item._id} className="card h-100 m-2">
                   <Link
                     to={`/${item._id}`}
@@ -67,15 +71,15 @@ function AllPets() {
                     />
 
                     <div className="card-body d-flex flex-column justify-content-center align-items-center mt-5">
-                      <h2 className="card-title">{item.name}</h2>
+                      <h2 className="card-title">{item.name[0].toUpperCase() + item.name.slice(1).toLowerCase()}</h2>
 
-                      <p className="card-text">{`${item.specie}, ${item.age} ${
+                      <p className="card-text">{`${item.specie[0].toUpperCase() + item.specie.slice(1).toLowerCase()}, ${Math.floor(item.age)} ${
                         item.age === "1" ? "year" : "years"
                       }`}</p>
                     </div>
                   </Link>
 
-                  <div className="d-flex justify-content-around pt-5 mb-0">
+                  <div className="d-flex justify-content-around mt-auto mb-3">
                     <button
                       type="button"
                       className="btn btn-primary"
