@@ -4,7 +4,8 @@ import { Link } from "react-router-dom"
 
 function Footer() {
     return (
-        <footer className="text-left text-dark fixed-bottom" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", position: "relative", left: 0, bottom: 0, right: 0, maxHeight: "calc(100vh - 67px)" }}>
+     
+        <footer className="text-left text-dark footer--pin mt-5" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", position: "relative", left: 0, bottom: 0, right: 0, maxHeight: "calc(100vh - 67px)" }}>
 
             <div className="">
 
