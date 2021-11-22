@@ -53,20 +53,26 @@ function PetDetails() {
           <div className="spinner-border" role="status"></div>
         </div>
       ) : (
-        <div className="card container d-flex justify-content-center mt-5" style={{width: "500px"}}>
+      <div>
+        <div className="card container d-flex justify-content-center mt-5 mb-5" style={{width: "500px"}}>
           <img className="card-img-top" src={pet.url} alt="pet"/>
           <div className="card-body">
-            <h2 className="card-title text-center">{pet.name}</h2>
+            <h2 className="card-title text-center">{pet.name[0].toUpperCase() + pet.name.slice(1).toLowerCase()}</h2>
             
           </div>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item"><h5>Breed: {pet.breed}</h5></li>
-            <li className="list-group-item"><h5>Sex: {pet.sex}</h5></li>
-            <li className="list-group-item"><h5>Age: {pet.age} {pet.age === "1" ? "year" : "years"}</h5></li>
+            <li className="list-group-item"><h5>Breed: <i>{pet.breed.toLowerCase()}</i></h5></li>
+            <li className="list-group-item"><h5>Sex: {pet.sex[0].toUpperCase() + pet.sex.slice(1).toLowerCase()}</h5></li>
+            <li className="list-group-item"><h5>Age: {Math.floor(pet.age)} {pet.age === "1" ? "year" : "years"}</h5></li>
             <li className="list-group-item"><h5>Vaccinated: {pet.vaccinated === "true" ? "Yes" : "No"}</h5></li>
             <li className="list-group-item"><h5>Available: {pet.adopted === true ? "No" : "Yes"}</h5></li>
           </ul>
         </div>
+
+        <div className="container d-flex justify-content-center mb-5 ">
+            <Link to="/AllPets"><button className="btn btn-primary">Back to All Pets</button></Link>
+        </div>
+      </div>
       )}
     </div>
   );

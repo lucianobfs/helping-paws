@@ -10,10 +10,9 @@ import AllPets from "./AllPets";
 import EditPet from "./EditPet";
 import FormField from "./FormField";
 import SelectInput from "./SelectInput";
-import hero from "../assets/images/hero-all-pets.jpg"
+import hero from "../assets/images/hero-all-pets.jpg";
 
 function AddPet() {
-
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -21,10 +20,10 @@ function AddPet() {
     name: "",
     specie: "",
     breed: "",
-    sex: "",
+    sex: "male",
     age: "",
     vaccinated: false,
-    adopted: false
+    adopted: false,
   });
 
   const [isSending, setIsSending] = useState(false);
@@ -44,7 +43,7 @@ function AddPet() {
       .post("https://ironrest.herokuapp.com/matheus-luciano", formData)
       .then((response) => {
         console.log(response);
-        navigate("/AllPets")
+        navigate("/AllPets");
         setIsSending(false);
       })
       .catch((err) => {
@@ -55,17 +54,26 @@ function AddPet() {
   }
 
   return (
-
     <>
-
-<div className="hero-image d-flex align-items-center justify-content-center" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero})`,backgroundRepeat: "no-repeat", backgroundSize: "cover", position: "relative" , height: "70vh"}}>
+      <div
+        className="hero-image d-flex align-items-center justify-content-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          position: "relative",
+          height: "70vh",
+        }}
+      >
         <div className="hero-text text-white text-center">
-          <h2  style={{fontSize: "4rem", marginBottom: "75px"}}>Register a Pet</h2>
-          <p style={{fontSize: "1.8rem"}}>It's Free, Easy and Simple</p>
+          <h2 style={{ fontSize: "4rem", marginBottom: "75px" }}>
+            Register a Pet
+          </h2>
+          <p style={{ fontSize: "1.8rem" }}>It's Free, Easy and Simple</p>
         </div>
       </div>
 
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <form onSubmit={handleSubmit}>
           <FormField
             label="URL"
@@ -112,14 +120,14 @@ function AddPet() {
           />
 
           <SelectInput
-              label="Sex"
-              id="SexInput"
-              name="sex"
-              onChange={handleChange}
-              value={formData.sex}
+            label="Sex"
+            id="SexInput"
+            name="sex"
+            onChange={handleChange}
+            value={formData.sex}
           >
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
           </SelectInput>
 
           <FormField
@@ -134,30 +142,32 @@ function AddPet() {
           />
 
           <SelectInput
-              label="Vaccinated"
-              id="VaccinatedInput"
-              name="vaccinated"
-              onChange={handleChange}
-              value={formData.vaccinated}
+            label="Vaccinated"
+            id="VaccinatedInput"
+            name="vaccinated"
+            onChange={handleChange}
+            value={formData.vaccinated}
           >
-              <option value={false}>No</option>
-              <option value={true}>Yes</option>
+            <option value={false}>No</option>
+            <option value={true}>Yes</option>
           </SelectInput>
 
           <SelectInput
-              label="Adopted"
-              id="AdoptedInput"
-              name="adopted"
-              onChange={handleChange}
-              value={formData.adopted}
+            label="Adopted"
+            id="AdoptedInput"
+            name="adopted"
+            onChange={handleChange}
+            value={formData.adopted}
           >
-              <option value={false}>No</option>
-              <option value={true}>Yes</option>
+            <option value={false}>No</option>
+            <option value={true}>Yes</option>
           </SelectInput>
 
-            
-
-          <button disabled={isSending} type="submit" className="btn btn-primary">
+          <button
+            disabled={isSending}
+            type="submit"
+            className="btn btn-primary"
+          >
             {isSending ? (
               <span
                 className="spinner-border spinner-border-sm me-2"
@@ -192,4 +202,17 @@ required
   Sim
 </option>
 </FormField> */
+}
+
+{
+  /* <FormField
+label="Breed"
+id="BreedInput"
+type="text"
+name="breed"
+onChange={handleChange}
+value={formData.breed}
+placeholder="Insert the breed of the Pet here"
+required
+/> */
 }

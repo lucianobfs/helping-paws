@@ -17,7 +17,7 @@ function SelectInput(props) {
           {props.label}
         </label>
         <select
-          className="form-select"
+          className="form-select mb-3"
           id={props.id}
           name={props.name}
           onChange={props.onChange}

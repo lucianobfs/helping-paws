@@ -21,7 +21,7 @@ function EditPet() {
       name: "",
       specie: "",
       breed: "",
-      sex: "",
+      sex: "male",
       age: "",
       vaccinated: false,
       adopted: false
@@ -72,7 +72,7 @@ function EditPet() {
     }
   
     return (
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <form onSubmit={handleSubmit}>
           <FormField
             label="URL"
@@ -121,8 +121,8 @@ function EditPet() {
               onChange={handleChange}
               value={formData.sex}
           >
-              <option value="male">Macho</option>
-              <option value="female">Fêmea</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
           </SelectInput>
   
           <FormField
@@ -142,8 +142,8 @@ function EditPet() {
               onChange={handleChange}
               value={formData.vaccinated}
           >
-              <option value={false}>Não</option>
-              <option value={true}>Sim</option>
+              <option value={false}>No</option>
+              <option value={true}>Yes</option>
           </SelectInput>
   
           <SelectInput
@@ -153,8 +153,8 @@ function EditPet() {
               onChange={handleChange}
               value={formData.adopted}
           >
-              <option value={false}>Não</option>
-              <option value={true}>Sim</option>
+              <option value={false}>No</option>
+              <option value={true}>Yes</option>
           </SelectInput>
   
              

@@ -18,7 +18,7 @@ import EditPet from './EditPet';
 function NavBar() {
     return (
 
-        <Navbar bg="info" expand={false}>
+        <Navbar bg="info" expand={false} collapseOnSelect={true}>
             <Container fluid>
                 <Navbar.Brand href="/"><img src={img} alt="logo" style={{width:'100px'}}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -27,12 +27,12 @@ function NavBar() {
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="end"
                 >
-                    <Offcanvas.Header closeButton>
+                    <Offcanvas.Header closeButton >
                         <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
-                        <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Link to="/" className="text-decoration-none text-dark">Home</Link>
+                        <Nav className="justify-content-end flex-grow-1 pe-3" >
+                            <Link to="/" className="text-decoration-none text-dark" >Home</Link>
                             <Link to="/AllPets" className="text-decoration-none text-dark">All Pets</Link>
                             <Link to="/AddPet" className="text-decoration-none text-dark">Register Pet</Link>
                         </Nav>
