@@ -67,7 +67,7 @@ function AllPets() {
                     <img
                       src={item.url}
                       alt={item.name}
-                      className="card-img-top"
+                      className="card-img-top "
                     />
 
                     <div className="card-body d-flex flex-column justify-content-center align-items-center mt-5">

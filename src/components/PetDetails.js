@@ -54,7 +54,7 @@ function PetDetails() {
         </div>
       ) : (
       <div>
-        <div className="card container d-flex justify-content-center mt-5 mb-5" style={{width: "500px"}}>
+        <div className="card container-fluid d-flex justify-content-center mt-5 mb-5 " style={{width: "370px"}}>
           <img className="card-img-top" src={pet.url} alt="pet"/>
           <div className="card-body">
             <h2 className="card-title text-center">{pet.name[0].toUpperCase() + pet.name.slice(1).toLowerCase()}</h2>
