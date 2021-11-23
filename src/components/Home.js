@@ -19,7 +19,7 @@ import EditPet from './EditPet';
 function Home() {
     return (
         <>
-            <div className="img-fluid" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "900px" }}>
+            <div className="img-fluid" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "100vh" }}>
                 <div className="col-xxl-8 px-4 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="col-10 col-sm-8 col-lg-6">

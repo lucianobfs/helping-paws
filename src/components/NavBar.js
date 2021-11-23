@@ -32,9 +32,9 @@ function NavBar() {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3" >
-                            <Link to="/" className="text-decoration-none text-dark" >Home</Link>
-                            <Link to="/AllPets" className="text-decoration-none text-dark">All Pets</Link>
-                            <Link to="/AddPet" className="text-decoration-none text-dark">Register Pet</Link>
+                          <Nav.Item >  <Nav.Link to="/" className="text-decoration-none text-dark" as={Link} eventKey="1">Home</Nav.Link> </Nav.Item>
+                          <Nav.Item > <Nav.Link to="/AllPets" className="text-decoration-none text-dark" as={Link} eventKey="2">All Pets</Nav.Link> </Nav.Item>
+                          <Nav.Item > <Nav.Link to="/AddPet" className="text-decoration-none text-dark" as={Link} eventKey="3">Register Pet</Nav.Link> </Nav.Item>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>

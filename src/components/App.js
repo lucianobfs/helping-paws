@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, Routes, Route, Navigate } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import "../index.css"
 
 import Home from './Home';
 import NavBar from './NavBar';

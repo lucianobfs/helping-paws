@@ -3,6 +3,7 @@ import { Link, Routes, Route, Navigate } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../../src/App.css"
 
 import Home from "./Home";
 import NavBar from "./NavBar";
