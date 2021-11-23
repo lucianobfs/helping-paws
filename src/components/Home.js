@@ -19,7 +19,7 @@ import EditPet from './EditPet';
 function Home() {
     return (
         <>
-            <div className="img-fluid" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "100vh" }}>
+            <div className="img-fluid" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "calc(100vh - 108.56px" }}>
                 <div className="col-xxl-8 px-4 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="col-10 col-sm-8 col-lg-6">
@@ -36,7 +36,7 @@ function Home() {
                     <div className="col-md-6">
                         <img className="img-fluid" src={img2} style={{ maxWidth: "100%", height: 'auto' }} />
                     </div>
-                    <div className="col-md-6 pt-5">
+                    <div className="col-md-6 pt-5 mt-5">
                         <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "3em", color: "#231F20" }}>We make the (Im)Possible</h2>
                         <p className="display-5 fw-bold lh-3 mt-5" style={{ fontSize: "2.0em", color: "gray" }}> When adopting, the chosen animal is given a chance to restart. Meet our animals and help publicize them, here you will find puppies and adults, of different sizes, colors and coats, in addition to special animals.</p>
                     </div>
@@ -88,7 +88,23 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
+
+
+            <div className="container-fluid p-5">
+                <div className="row">
+                    <div className="col-md-6 text-center">
+                        <iframe className="container-fluid" width="525" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.51248264312746%2C34.00807780839357%2C-118.47664833068849%2C34.024334049434735&amp;layer=mapnik&amp;marker=34.016206318030996%2C-118.49456548690796" style={{border: "0px solid black"}}></iframe>
+                    </div>
+                    <div className="col-md-6 pt-5">
+                        <h2 className="display-5 fw-bold lh-1 mb-3 " style={{ fontSize: "3em", color: "#231F20" }}>Get in Touch With Us</h2>
+                        <p className="display-5 fw-bold lh-3 mt-5" style={{ fontSize: "2.0em", color: "gray" }}> Us and the Pets would Love your visit</p>
+                    </div>
+                </div>
+            </div>                            
         </>
     );
 }
