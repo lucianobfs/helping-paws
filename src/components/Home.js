@@ -25,7 +25,7 @@ function Home() {
                         <div className="col-10 col-sm-8 col-lg-6">
                         </div>
                         <div className="col-lg-6 pt-5 pl-5">
-                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "5em", color: "lightGray" }}>Já pensou em adoção?</h1>
+                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "5em", color: "lightGray" }}>Have you thought about adoption?</h1>
                         </div>
                     </div>
                 </div>
@@ -37,53 +37,53 @@ function Home() {
                         <img className="img-fluid" src={img2} style={{maxWidth: "100%", height: 'auto' }} />
                     </div>
                     <div className="col pt-5">
-                        <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "4em", color: "gray" }}>Fazemos o impossível ser realidade.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula odio, sagittis quis egestas a, commodo non elit. Cras sollicitudin lobortis nibh. Proin at consequat ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris scelerisque tempus leo, ac consectetur nibh eleifend quis. Nunc sagittis ante lorem, quis feugiat massa elementum vel. Sed placerat varius quam, non efficitur magna lobortis nec. Nam porttitor pellentesque justo non dictum. Cras in tellus nec tellus efficitur varius. Cras placerat, nisl vitae lobortis feugiat, magna ante blandit ante, ut congue libero lacus nec augue. Morbi in malesuada lorem. Donec ut cursus magna, at aliquam leo. Fusce lacinia risus eu cursus dictum. Sed dui sapien, viverra vel malesuada vitae, vehicula id nulla.<br />Sed dapibus lacus enim, eget porta orci aliquam sed. Sed aliquet id justo eu gravida. Nulla facilisi. Morbi sapien sem, dignissim nec nulla sit amet, consequat facilisis eros. Curabitur auctor venenatis bibendum. Nullam quis blandit felis. Integer sed porta mi. Fusce lobortis sapien varius aliquam iaculis. Cras viverra at ex non vehicula. Suspendisse blandit hendrerit sem quis auctor. Nunc convallis est id eros elementum efficitur. Donec eget tellus quam. Suspendisse tellus turpis, eleifend quis lacus hendrerit, congue scelerisque massa. Quisque vulputate lorem at ex accumsan rhoncus.  </p>
+                        <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "4em", color: "#231F20" }}>We make the (Im)Possible.</h2>
+                        <p className="display-5 fw-bold lh-3 mt-5" style={{ fontSize: "2.0em", color: "gray" }}> When adopting, the chosen animal is given a chance to restart. Meet our animals and help publicize them, here you will find puppies and adults, of different sizes, colors and coats, in addition to special animals.</p>
                     </div>
                 </div>
             </div>
 
             <div className="card-deck mx-5">
                 <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart size="50px"/></i>
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart className="pt-2" size="50px"/></i>
                     <div className="card-body">
-                        <CountUp start={0} end={123423423400} delay={0} duration={4}>
+                        <CountUp start={0} end={25526} delay={0} duration={4}>
                             {({ countUpRef }) => (
                                 <div>
-                                    <h1 ref={countUpRef} />
+                                    <h1 className="fw-bold" ref={countUpRef} />
                                 </div>
                             )}
                         </CountUp>
 
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+                        <p className="card-text fw-bold">Animals that we helped find a home</p>
                     </div>
                 </div>
                 <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaCat size="50px"/></i>
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaCat className="pt-2" size="50px"/></i>
                     <div className="card-body">
-                        <CountUp start={0} end={550000} delay={0} duration={4}>
+                        <CountUp start={0} end={347} delay={0} duration={4}>
                             {({ countUpRef }) => (
                                 <div>
-                                    <h1 ref={countUpRef} />
+                                    <h1 className="fw-bold" ref={countUpRef} />
                                 </div>
                             )}
                         </CountUp>
 
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+                        <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home</p>
                     </div>
                 </div>
                 <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaPaw size="50px"/></i>
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaPaw className="pt-2" size="50px"/></i>
                     <div className="card-body">
-                        <CountUp start={0} end={1023453124230} delay={0} duration={4}>
+                        <CountUp start={0} end={15226754} delay={0} duration={4}>
                             {({ countUpRef }) => (
                                 <div>
-                                    <h1 ref={countUpRef} />
+                                    <h1 className="fw-bold" ref={countUpRef} />
                                 </div>
                             )}
                         </CountUp>
 
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+                        <p className="card-text fw-bold">Number of animals abandoned around the world.</p>
                     </div>
                 </div>
             </div>
