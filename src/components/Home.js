@@ -25,7 +25,7 @@ function Home() {
                         <div className="col-10 col-sm-8 col-lg-6">
                         </div>
                         <div className="col-lg-6 pt-5 pl-5">
-                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "5em", color: "lightGray" }}>Have you thought about adoption?</h1>
+                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "4em", color: "lightGray" }}>Have you thought about adoption?</h1>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ function Home() {
                         <img className="img-fluid" src={img2} style={{maxWidth: "100%", height: 'auto' }} />
                     </div>
                     <div className="col pt-5">
-                        <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "4em", color: "#231F20" }}>We make the (Im)Possible.</h2>
+                        <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "3em", color: "#231F20" }}>We make the (Im)Possible</h2>
                         <p className="display-5 fw-bold lh-3 mt-5" style={{ fontSize: "2.0em", color: "gray" }}> When adopting, the chosen animal is given a chance to restart. Meet our animals and help publicize them, here you will find puppies and adults, of different sizes, colors and coats, in addition to special animals.</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ function Home() {
                             )}
                         </CountUp>
 
-                        <p className="card-text fw-bold">Animals that we helped find a home</p>
+                        <p className="card-text fw-bold">Animals that we helped find a home.</p>
                     </div>
                 </div>
                 <div className="card text-center">
@@ -69,7 +69,7 @@ function Home() {
                             )}
                         </CountUp>
 
-                        <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home</p>
+                        <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home.</p>
                     </div>
                 </div>
                 <div className="card text-center">
