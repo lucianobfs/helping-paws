@@ -63,7 +63,7 @@ function AddPet() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           position: "relative",
-          height: "70vh",
+          height: "calc(100vh - 108.56px)",
         }}
       >
         <div className="hero-text text-white text-center">

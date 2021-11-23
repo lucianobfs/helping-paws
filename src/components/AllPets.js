@@ -43,7 +43,7 @@ function AllPets() {
   return (
     <>
 
-      <div className="hero-image d-flex align-items-center justify-content-center" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero})`,backgroundRepeat: "no-repeat", backgroundSize: "cover", position: "relative" , height: "70vh"}}>
+      <div className="hero-image d-flex align-items-center justify-content-center" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero})`,backgroundRepeat: "no-repeat", backgroundSize: "cover", position: "relative" , height: "calc(100vh - 108.56px)"}}>
         <div className="hero-text text-white text-center">
           <h2  style={{fontSize: "4rem", marginBottom: "75px"}}>All the Pets</h2>
           <p style={{fontSize: "1.8rem"}}>We have a lot of cute pets waiting to give and receive love</p>
