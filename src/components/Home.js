@@ -34,7 +34,7 @@ function Home() {
             <div className="container-fluid p-5">
                 <div className="row">
                     <div className="col">
-                        <img className="img-fluid" src={img2} style={{maxWidth: "100%", height: 'auto' }} />
+                        <img className="img-fluid" src={img2} style={{ maxWidth: "100%", height: 'auto' }} />
                     </div>
                     <div className="col pt-5">
                         <h2 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "3em", color: "#231F20" }}>We make the (Im)Possible</h2>
@@ -43,9 +43,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className="card-deck mx-5">
-                <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart className="pt-2" size="50px"/></i>
+            <div className="card-deck mx-5 px-5">
+                <div className="card border-0 text-center">
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart className="pt-2" size="50px" /></i>
                     <div className="card-body">
                         <CountUp start={0} end={25526} delay={0} duration={4}>
                             {({ countUpRef }) => (
@@ -58,8 +58,8 @@ function Home() {
                         <p className="card-text fw-bold">Animals that we helped find a home.</p>
                     </div>
                 </div>
-                <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaCat className="pt-2" size="50px"/></i>
+                <div className="card border-0 text-center">
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaCat className="pt-2" size="50px" /></i>
                     <div className="card-body">
                         <CountUp start={0} end={347} delay={0} duration={4}>
                             {({ countUpRef }) => (
@@ -72,8 +72,8 @@ function Home() {
                         <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home.</p>
                     </div>
                 </div>
-                <div className="card text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaPaw className="pt-2" size="50px"/></i>
+                <div className="card border-0 text-center">
+                    <i className="card-img-top" src="..." alt="Card image cap"><FaPaw className="pt-2" size="50px" /></i>
                     <div className="card-body">
                         <CountUp start={0} end={15226754} delay={0} duration={4}>
                             {({ countUpRef }) => (
