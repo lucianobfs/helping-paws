@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, Routes, Route, Navigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from "axios";
-
+import "../index.css"
 import CountUp, { useCountUp } from 'react-countup';
+
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTwitterSquare } from 'react-icons/fa';
+
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { FaCat } from "react-icons/fa";
 import { FaPaw } from 'react-icons/fa';
@@ -11,25 +13,18 @@ import { FaPaw } from 'react-icons/fa';
 import img from '../assets/images/home.jpg';
 import img2 from "../assets/images/home2.jpg"
 
-import NavBar from './NavBar';
-import AllPets from './AllPets';
-import AddPet from './AddPet';
-import EditPet from './EditPet';
+
 
 function Home() {
     return (
         <>
-            <div className="img-fluid" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "calc(100vh - 108.56px" }}>
-                <div className="col-xxl-8 px-4 py-5">
-                    <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div className="col-10 col-sm-8 col-lg-6">
-                        </div>
-                        <div className="col-lg-6 pt-5 pl-5">
-                            <h1 className="display-5 fw-bold lh-1 mb-3" style={{ fontSize: "4em", color: "lightGray" }}>Have you thought about adoption?</h1>
-                        </div>
-                    </div>
+
+            <div className="hero-section">
+                <div className="col-lg-6">
+                <h1 className="display-5 fw-bold lh-1 mb-5 pb-5" style={{ fontSize: "4em", color: "lightGray" }}>Have you thought about adoption?</h1>
                 </div>
             </div>
+
 
             <div className="container-fluid p-5">
                 <div className="row">
@@ -88,23 +83,38 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
 
             <div className="container-fluid p-5">
                 <div className="row">
                     <div className="col-md-6 text-center">
-                        <iframe className="container-fluid" width="525" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.51248264312746%2C34.00807780839357%2C-118.47664833068849%2C34.024334049434735&amp;layer=mapnik&amp;marker=34.016206318030996%2C-118.49456548690796" style={{border: "0px solid black"}}></iframe>
+                        <iframe className="container-fluid" width="525" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.51248264312746%2C34.00807780839357%2C-118.47664833068849%2C34.024334049434735&amp;layer=mapnik&amp;marker=34.016206318030996%2C-118.49456548690796" style={{ border: "0px solid black" }}></iframe>
                     </div>
                     <div className="col-md-6 pt-5">
                         <h2 className="display-5 fw-bold lh-1 mb-3 " style={{ fontSize: "3em", color: "#231F20" }}>Get in Touch With Us</h2>
                         <p className="display-5 fw-bold lh-3 mt-5" style={{ fontSize: "2.0em", color: "gray" }}> Us and the Pets would Love your visit</p>
+                        <div className="pt-5 mt-5">
+                            <h2>Our socials</h2>
+                            <div className="mt-1">
+                                <a href="https://facebook.com" target="_blank" className="text-decoration-none text-dark mr-4">
+                                    <FaFacebookSquare color="#0A83ED" size="25px" />
+                                </a>
+                            </div>
+                            <div className="mt-3">
+                                <a href="https://instagram.com" target="_blank" className="text-decoration-none text-dark mr-4">
+                                    <FaInstagram color="#C32AA3" size="25px" />
+                                </a>
+                            </div>
+                            <div className="mt-3">
+                                <a href="https://twitter.com" target="_blank" className="text-decoration-none text-dark mr-4">
+                                    <FaTwitterSquare color="#00ACEE" size="25px" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>                            
+            </div>
         </>
     );
 }
