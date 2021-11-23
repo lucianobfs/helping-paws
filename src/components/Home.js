@@ -43,47 +43,49 @@ function Home() {
                 </div>
             </div>
 
-            <div className="card-deck mx-5 px-5">
-                <div className="card border-0 text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart className="pt-2" size="50px" /></i>
-                    <div className="card-body">
-                        <CountUp start={0} end={25526} delay={0} duration={4}>
-                            {({ countUpRef }) => (
-                                <div>
-                                    <h1 className="fw-bold" ref={countUpRef} />
-                                </div>
-                            )}
-                        </CountUp>
+            <div className="" style={{backgroundColor: "#fec84e", maxHeight: "100%"}}>
+                <div className="card-deck mx-5 px-5 " >
+                    <div className="card border-0 text-center my-5 py-5" style={{backgroundColor: "#fec84e"}}>
+                        <i className="card-img-top" src="..." alt="Card image cap"><FaHandHoldingHeart className="pt-2" size="50px" /></i>
+                        <div className="card-body">
+                            <CountUp start={0} end={25526} delay={0} duration={4}>
+                                {({ countUpRef }) => (
+                                    <div>
+                                        <h1 className="fw-bold" ref={countUpRef} />
+                                    </div>
+                                )}
+                            </CountUp>
 
-                        <p className="card-text fw-bold">Animals that we helped find a home.</p>
+                            <p className="card-text fw-bold">Animals that we helped find a home.</p>
+                        </div>
                     </div>
-                </div>
-                <div className="card border-0 text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaCat className="pt-2" size="50px" /></i>
-                    <div className="card-body">
-                        <CountUp start={0} end={347} delay={0} duration={4}>
-                            {({ countUpRef }) => (
-                                <div>
-                                    <h1 className="fw-bold" ref={countUpRef} />
-                                </div>
-                            )}
-                        </CountUp>
+                    <div className="card border-0 text-center my-5 py-5" style={{backgroundColor: "#fec84e"}}>
+                        <i className="card-img-top" src="..." alt="Card image cap"><FaCat className="pt-2" size="50px" /></i>
+                        <div className="card-body">
+                            <CountUp start={0} end={347} delay={0} duration={4}>
+                                {({ countUpRef }) => (
+                                    <div>
+                                        <h1 className="fw-bold" ref={countUpRef} />
+                                    </div>
+                                )}
+                            </CountUp>
 
-                        <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home.</p>
+                            <p className="card-text fw-bold">Daily average of registrations we receive of animals rescued or needing a home.</p>
+                        </div>
                     </div>
-                </div>
-                <div className="card border-0 text-center">
-                    <i className="card-img-top" src="..." alt="Card image cap"><FaPaw className="pt-2" size="50px" /></i>
-                    <div className="card-body">
-                        <CountUp start={0} end={15226754} delay={0} duration={4}>
-                            {({ countUpRef }) => (
-                                <div>
-                                    <h1 className="fw-bold" ref={countUpRef} />
-                                </div>
-                            )}
-                        </CountUp>
+                    <div className="card border-0 text-center my-5 py-5" style={{backgroundColor: "#fec84e"}}>
+                        <i className="card-img-top" src="..." alt="Card image cap"><FaPaw className="pt-2" size="50px" /></i>
+                        <div className="card-body">
+                            <CountUp start={0} end={15226754} delay={0} duration={4}>
+                                {({ countUpRef }) => (
+                                    <div>
+                                        <h1 className="fw-bold" ref={countUpRef} />
+                                    </div>
+                                )}
+                            </CountUp>
 
-                        <p className="card-text fw-bold">Number of animals abandoned around the world.</p>
+                            <p className="card-text fw-bold">Number of animals abandoned around the world.</p>
+                        </div>
                     </div>
                 </div>
             </div>
