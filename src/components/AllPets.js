@@ -11,8 +11,9 @@ import AddPet from "./AddPet";
 import EditPet from "./EditPet";
 
 import hero from "../assets/images/hero-all-pets.jpg"
+import Button from "@restart/ui/esm/Button";
 
-function AllPets() {
+function AllPets(props) {
   const [pet, setPet] = useState([]);
 
   const navigate = useNavigate();
@@ -52,7 +53,7 @@ function AllPets() {
 
       <div className="container mt-5 mb-5">
           <div>
-            <Link to="/AddPet"><button className="btn btn-primary ms-2 mb-4">Add a Pet!</button></Link>
+            <Link to="/AddPet"><Button className="btn btn-primary ms-2 mb-4">Add a Pet</Button></Link>
           </div>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {pet.map((item) => {
@@ -86,6 +87,7 @@ function AllPets() {
                       onClick={() => {
                         handleDelete(item._id);
                         // navigate("/AllPets");
+                        console.log("clicou!")
                         window.location.reload(false);
                       }}
                     >
