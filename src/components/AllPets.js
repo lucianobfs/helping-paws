@@ -36,6 +36,7 @@ function AllPets(props) {
       await axios.delete(
         `https://ironrest.herokuapp.com/matheus-luciano/${id}`
       );
+      window.location.reload(false)
     } catch (err) {
       console.error(err);
     }
@@ -88,7 +89,6 @@ function AllPets(props) {
                         handleDelete(item._id);
                         // navigate("/AllPets");
                         console.log("clicou!")
-                        window.location.reload(false);
                       }}
                     >
                       <FaTrashAlt />
