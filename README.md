@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Welcome to Helping Paws
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! This is our second project from Ironhack Web Development Bootcamp, we where challenged to develop a SPA (single page application) with some CRUD functionality of any kind. We chose to make a pet adoption web application.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+![image](https://user-images.githubusercontent.com/91087085/143297547-76896ab1-78b4-480c-a774-4f14f97096c1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/91087085/143305118-54734bc6-ef3a-4038-be08-e64f449c93d9.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Stacks Used
 
-### `npm run build`
+ ![image](https://camo.githubusercontent.com/268ac512e333b69600eb9773a8f80b7a251f4d6149642a50a551d4798183d621/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163742d3230323332413f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d363144414642)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://camo.githubusercontent.com/93c855ae825c1757f3426f05a05f4949d3b786c5b22d0edb53143a9e8f8499f6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d3332333333303f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d463744463145)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://img.shields.io/badge/Insomnia-5849be?style=for-the-badge&logo=Insomnia&logoColor=white)
 
-### `npm run eject`
+![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://img.shields.io/badge/OpenStreetMap-7EBC6F?style=for-the-badge&logo=OpenStreetMap&logoColor=white)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Development
 
-## Learn More
+Developed in 6 days by Luciano Santana and Matheus Anjo at Ironhack São Paulo Bootcamp.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+11/19/2021 - 11/24/2021
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ - Responsive Web Design using Bootstrap: 
 
-### Analyzing the Bundle Size
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/91087085/143301586-08089a5e-7773-4a60-b8ab-edc0512dbd93.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+- Create and Post data in the API via forms:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/91087085/143303243-c4aa9a2d-f3a5-4a16-91b2-bcbd634328c1.gif)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+- Read and display data from our api dynamically: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/91087085/143302421-ef4375b8-1d97-431b-8f92-8f40e12d0837.gif)
 
-### `npm run build` fails to minify
+- Delete data from the API by the ID
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Update existing API data
+
+
+# Developed By
+
+- Luciano Santana
+
+	[![name](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucianobfs)
+
+	[![name](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luciano-santana-65937a221/)
+
+
+- Matheus Anjo
+
+	[![name](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/matheusanjo)
+
+	

@@ -99,6 +99,12 @@ function AllPets(props) {
                         Edit this Pet !
                       </button>
                     </Link>
+
+                    <Link to={`/RequestAdoption`}>
+                      <button type="button" className="btn btn-primary">
+                        Request Adoption
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

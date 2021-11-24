@@ -12,6 +12,7 @@ import AddPet from './AddPet';
 import EditPet from './EditPet';
 import PetDetails from './PetDetails';
 import Button from '@restart/ui/esm/Button';
+import FakeForm from './FakeForm';
 
 
 
@@ -33,6 +34,8 @@ function App() {
         <Route path="/EditPet/:id" element={<EditPet />} />
 
         <Route path=":id" element={<PetDetails />}/>
+
+        <Route path="/RequestAdoption" element={<FakeForm />}/>
 
 
       </Routes>
