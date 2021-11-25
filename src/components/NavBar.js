@@ -20,7 +20,7 @@ function NavBar() {
 
         <Navbar bg="warning" expand={false} collapseOnSelect={true}>
             <Container fluid>
-                <Navbar.Brand href="/"><img src={img} alt="logo" style={{width:'100px'}}/></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={img} alt="logo" style={{width:'100px'}}/>Helping Paws</Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
