@@ -65,7 +65,7 @@ function PetDetails() {
             <li className="list-group-item"><h5>Sex: {pet.sex[0].toUpperCase() + pet.sex.slice(1).toLowerCase()}</h5></li>
             <li className="list-group-item"><h5>Age: {Math.floor(pet.age)} {pet.age === "1" ? "year" : "years"}</h5></li>
             <li className="list-group-item"><h5>Vaccinated: {pet.vaccinated === "true" ? "Yes" : "No"}</h5></li>
-            <li className="list-group-item"><h5>Available: {pet.adopted === true ? "No" : "Yes"}</h5></li>
+            <li className="list-group-item"><h5>Available: {pet.adopted === "true" ? "No" : "Yes"}</h5></li>
           </ul>
         </div>
 
